@@ -3,13 +3,13 @@ import clsx from "clsx"
 
 const Feedback = ({ good, bad, neutral, totalFeedback, positiveFeedback }) => {
     return (
-        <div>
-            <p>Good: { good }</p>
-            <p>Neutral: { neutral }</p>
-            <p>Bad: { bad }</p>
-            <p>Total: {totalFeedback}</p>
-            <p>Positive: { positiveFeedback }%</p>
-        </div>
+        <>
+            <p className={clsx(css.text)}>Good: { good }</p>
+            <p className={clsx(css.text)}>Neutral: { neutral }</p>
+            <p className={clsx(css.text)}>Bad: { bad }</p>
+            <p className={clsx(css.text)}>Total: {totalFeedback}</p>
+            <p className={clsx(css.text)}>Positive: { positiveFeedback }%</p>
+        </>
     )
 }
 
